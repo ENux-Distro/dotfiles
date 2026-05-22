@@ -1,0 +1,13 @@
+#/bin/sh
+
+echo "[1/3] Copy files to $HOME"
+mkdir -p $HOME/.config/fastfetch
+cp .config/fastfetch/config.jsonc $HOME/.config/fastfetch/config.jsonc
+
+echo "[2/3] Copying read-only files to host using su"
+
+su -c "cp etc/nanorc /etc/nanorc"
+
+echo "[3/3] Done"
+sleep 2
+exit 0
