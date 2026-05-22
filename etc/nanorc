@@ -340,7 +340,37 @@ include "/usr/share/nano/*.nanorc"
 # bind ^Z undo main
 # bind ^Y redo main
 set linenumbers
-set autoindent
-set softwrap
-set tabsize 4
 set constantshow
+set indicator
+set minibar
+set mouse
+set autoindent
+set tabstospaces
+set tabsize 4
+set softwrap
+
+set smarthome
+set positionlog
+set historylog
+set nohelp
+
+set casesensitive
+set regexp
+
+set titlecolor brightwhite,gray
+set statuscolor black,cyan
+set errorcolor brightwhite,red
+set selectedcolor black,green
+set numbercolor brightblack
+set keycolor cyan
+set functioncolor green
+
+include "/usr/share/nano/*.nanorc"
+
+include "/usr/share/nano/c.nanorc"
+include "/usr/share/nano/python.nanorc"
+include "/usr/share/nano/sh.nanorc"
+include "/usr/share/nano/json.nanorc"
+include "/usr/share/nano/markdown.nanorc"
+
+# Holy shit, this looks good
