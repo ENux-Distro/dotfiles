@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 echo "[1/3] Copy files to $HOME"
 mkdir -p $HOME/.config/fastfetch
@@ -6,7 +6,7 @@ cp .config/fastfetch/config.jsonc $HOME/.config/fastfetch/config.jsonc
 
 echo "[2/3] Copying read-only files to host using su"
 
-su -c "mkdir /etc/fastfetch -p && cp etc/fastfetch/E-logo.txt /etc/fastfetch/E-logo.txt && cp etc/nanorc /etc/nanorc"
+su -c "mkdir -p /etc/fastfetch && cp etc/fastfetch/E-logo.txt /etc/fastfetch/E-logo.txt && cp etc/nanorc /etc/nanorc"
 
 su -c 'cat > /usr/bin/enuxfetch << EOF
 #!/bin/sh
