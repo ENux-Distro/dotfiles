@@ -19,9 +19,9 @@ echo "[3/4] Installing XWallpaper and setting up the wallpaper"
 su -c "apt install -y xwallpaper -q"
 
 mkdir -p "$HOME/.local/share/walls"
-cp walls/ENux.png "$HOME/.local/share/walls/ENux.png"
+cp walls/ENux.jpg "$HOME/.local/share/walls/ENux.jpg"
 
-WALL="$HOME/.local/share/walls/ENux.png"
+WALL="$HOME/.local/share/walls/ENux.jpg"
 
 mkdir -p "$HOME/.config/autostart"
 
